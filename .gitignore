@@ -1,0 +1,16 @@
+# Model file
+CNN_BF_PY.h5
+
+# FastAPI
+__pycache__/
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# Environments
+.env
+.venv
+ENV/
+env/
+venv/
