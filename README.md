@@ -2,6 +2,9 @@
 
 This project uses a pre-trained Keras model to predict images through a FastAPI endpoint.
 
+> **NOTE**  
+> Copy the model file to the root directory of the project. Ensure the model file is named `CNN_BF_PY.h5`, or adjust the filename in accordance with your model as specified in the `app/core/config.py` file.
+
 ## Setup with Docker
 
 run the following command in the terminal to setup the project:
@@ -40,7 +43,6 @@ sudo apt-get install libhdf5-dev
     ```sh
     pip install -r requirements.txt
     ```
-4. Copy the model file to the root directory of the project. Ensure the model file is named CNN_BF_PY.h5, or adjust the filename in accordance with your model as specified in the app/core/config.py file.
 
 5. Run the FastAPI application:
 
