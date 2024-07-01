@@ -2,7 +2,17 @@
 
 This project uses a pre-trained Keras model to predict images through a FastAPI endpoint.
 
-## Prerequisites
+## Setup with Docker
+
+run the following command in the terminal to setup the project:
+
+```sh
+docker-compose up -d --build
+```
+
+## Setup with Virtual Environment
+
+### Prerequisites
 
 need to have the following tools installed for h5py:
 
@@ -10,8 +20,6 @@ need to have the following tools installed for h5py:
 sudo apt-get install pkg-config
 sudo apt-get install libhdf5-dev
 ```
-
-## Setup
 
 1. Create a virtual environment:
     ```sh
@@ -35,13 +43,20 @@ sudo apt-get install libhdf5-dev
 4. Copy the model file to the root directory of the project. Ensure the model file is named CNN_BF_PY.h5, or adjust the filename in accordance with your model as specified in the app/core/config.py file.
 
 5. Run the FastAPI application:
+
     ```sh
-    uvicorn app.main:app --reload
+    python3 -m uvicorn main:app
+    ```
+    or for development with hot reloading:
+    ```sh
+    uvicorn main:app --reload
     ```
 
-6. Go to `http://127.0.0.1:8000` to see the welcome message.
+## Usage
 
-7. Use the `/predict/` endpoint to make predictions.
+1. Go to `http://127.0.0.1:8000` to see the welcome message.
+
+2. Use the `/predict/` endpoint to make predictions.
 
     example:
     ```sh
