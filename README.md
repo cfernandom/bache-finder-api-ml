@@ -2,6 +2,15 @@
 
 This project uses a pre-trained Keras model to predict images through a FastAPI endpoint.
 
+## Prerequisites
+
+need to have the following tools installed for h5py:
+
+```
+sudo apt-get install pkg-config
+sudo apt-get install libhdf5-dev
+```
+
 ## Setup
 
 1. Create a virtual environment:
