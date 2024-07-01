@@ -23,6 +23,7 @@ need to have the following tools installed for h5py:
 sudo apt-get install pkg-config
 sudo apt-get install libhdf5-dev
 ```
+### Setup
 
 1. Create a virtual environment:
     ```sh
