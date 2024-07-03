@@ -2,8 +2,8 @@ from tensorflow.keras.models import load_model
 from app.core.config import settings
 import os
 
-def get_model():
-    model_path = settings.MODEL_PATH
+def get_model(model_path: str):
+    
     if not os.path.exists(model_path):
         raise FileNotFoundError(f"Model file not found at {model_path}")
 
