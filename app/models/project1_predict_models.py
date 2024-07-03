@@ -11,12 +11,12 @@ class Project1PredictModels:
         self.model6 = get_model(settings.PROJECT1_MODEL6_PATH)
 
     def predicts(self, input_data):
-        prediction1 = self.model1.predict(input_data).tolist()
-        prediction2 = self.model2.predict(input_data).tolist()
-        prediction3 = self.model3.predict(input_data).tolist()
-        prediction4 = self.model4.predict(input_data).tolist()
-        prediction5 = self.model5.predict(input_data).tolist()
-        prediction6 = self.model6.predict(input_data).tolist()
+        prediction1 = self.model1.predict(input_data).flatten().tolist()
+        prediction2 = self.model2.predict(input_data).flatten().tolist()
+        prediction3 = self.model3.predict(input_data).flatten().tolist()
+        prediction4 = self.model4.predict(input_data).flatten().tolist()
+        prediction5 = self.model5.predict(input_data).flatten().tolist()
+        prediction6 = self.model6.predict(input_data).flatten().tolist()
         
         return {
             "1": prediction1, 
