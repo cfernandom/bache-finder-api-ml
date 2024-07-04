@@ -19,12 +19,12 @@ class Project1PredictModels:
         prediction6 = self.model6.predict(input_data).flatten().tolist()
         
         return {
-            "1": prediction1, 
-            "2": prediction2, 
-            "3": prediction3, 
-            "4": prediction4, 
-            "5": prediction5, 
-            "6": prediction6
+            "Al": prediction1, 
+            "Co": prediction2, 
+            "K": prediction3, 
+            "Ph": prediction4, 
+            "P": prediction5, 
+            "Textura": prediction6
         }
         
 
