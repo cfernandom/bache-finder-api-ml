@@ -12,3 +12,6 @@ services:
       - ./storage:/storage
     networks:
       - bache-finder-network
+networks:
+  bache-finder-network:
+    external: true
