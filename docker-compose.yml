@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
 
-  bache-finder-ml-model:
+  bache-finder-ml-api:
     build:
       context: .
       dockerfile: Dockerfile
